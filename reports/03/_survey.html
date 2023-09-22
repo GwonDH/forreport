@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {background-color: aliceblue;}
+        header {background-color: yellow; height: 20%; width:100%;}
+        section {background-color: pink; margin: 2% 2% 2% 2%; width:96%; height: 68%;}
+        footer {background-color: violet; height: 8%; clear: both; width:100%; vertical-align: middle;}
+        body, html { height: 100%; margin: 0px; padding: 0px; width: 100%;}
+        h1 {text-align: center;}
+    </style>
+</head>
+<body>
+    <header>
+    <h1>설문지</h1>
+    <span>소프트웨어 기술에 대한 의견을 듣습니다. 많은 참여 부탁드립니다.</span>
+    </header>
+    <section>
+    <div id="survey">
+    <form>
+        학년
+        <input type="radio" name="grade" value="1"><span>1학년</span>
+        <input type="radio" name="grade" value="2"><span>2학년</span>
+        <input type="radio" name="grade" value="3"><span>3학년</span>
+        <input type="radio" name="grade" value="4"><span>4학년</span>
+    </form>
+    <form>성별
+        <input type="radio" name="gender" value="1"><span>남</span>
+        <input type="radio" name="gender" value="2"><span>여</span>
+    </form>
+    <form>관심 분야
+        <select name="interest">
+            <option value="1">모바일 소프트웨어
+            <option value="2">웹
+            <option value="3">보안
+            <option value="4">기타
+        </select>
+    </form>
+    <form>진로(다중 선택)
+        <input type="checkbox" value="1"><span>개발</span>
+        <input type="checkbox" value="2"><span>기획</span>
+        <input type="checkbox" value="3"><span>영업</span>
+        <input type="checkbox" value="4"><span>창업</span>
+    </form>
+    <label>
+        남기고 싶은 말<input type="text">
+    </label>
+    </div>
+    </section>
+    <footer><span>Copyright 2023 by DawHwan</span></footer>
+</body>
+</html>
