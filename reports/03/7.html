@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function show() {document.getElementById("card").src="./spade-7.png";}
+        function hide() {document.getElementById("card").src="./back.png";}
+    </script>
+</head>
+<body>
+    <h2>:hover 활용</h2>
+    <hr />
+    <div onmouseover="show()" onmouseout="hide()"><table>
+        <td><p>마우스를 올리면 카드의 앞면이 보인다.</p>
+        <td><img id="card" src="./back.png" width="156px" height="220px"></td>
+    </table></div>
+</body>
+</html>

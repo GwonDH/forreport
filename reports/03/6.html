@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>링크 꾸미기</title>
+    <style>
+        a {text-decoration: none; color:green}
+    </style>
+    <script>
+        function on1() {document.getElementById("1").style="color: violet;"; document.getElementById("1").innerHTML="<u>네이버 사이트</u>";}
+        function on2() {document.getElementById("2").style="color: violet;"; document.getElementById("2").innerHTML="<u>구글 사이트</u>";}
+        function off1() {document.getElementById("1").style="color: green;"; document.getElementById("1").innerHTML="네이버 사이트";}
+        function off2() {document.getElementById("2").style="color: green;"; document.getElementById("2").innerHTML="구글 사이트";}
+    </script>
+</head>
+<body>
+    <h1><b>링크 꾸미기</b></h1>
+    <p>초록색에 밑줄없는 링크, 마우스를 올리면 밑줄과 violet 색으로 변경</p>
+    <hr />
+    <ul>
+    <li><a id="1" href="https://www.naver.com" onmouseover="on1()" onmouseout="off1()">네이버 사이트</a><br />
+    <li><a id="2" href="https://www.google.co.kr" onmouseover="on2()" onmouseout="off2()">구글 사이트</a>
+    </ul>
+</body>
+</html>
