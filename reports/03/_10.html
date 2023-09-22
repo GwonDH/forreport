@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>애니메이션</title>
+    <style>
+        #sec {float: right; width: 7%;}
+    </style>
+    <script>
+        var x=0;
+        function wider() { if (x==0) {let v=7.0; setInterval( function k() { if (v>=100.0) clearInterval(k); else{ v+=0.31; document.getElementById("sec").style.width=v+'%';}}, 10)}; x=1; }
+    </script>
+</head>
+<body>
+    <h2>애니메이션 응용</h2>
+    <hr />
+    <nav></nav>
+    <section id="sec" onmouseover="wider()"><img src="./question.png"><p style="display: inline;">질문 있습니다.</p></section>
+</body>
+</html>

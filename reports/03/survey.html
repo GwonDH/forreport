@@ -3,20 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>컴퓨터 기술 선호에 관한 설문</title>
+    <title>Document</title>
     <style>
-        body {background-color: aliceblue; color: blue;}
-        #survey {background-color: pink;}
-        footer {background-color: orange; border-radius: 15px;}
-        span {color: black;}
-        div { margin:5px 5px;}
-        h1 {color: brown; text-align: center;}
+        body {background-color: aliceblue;}
+        header {background-color: yellow; height: 20%; width:100%;}
+        section {background-color: pink; margin: 2% 2% 2% 2%; width:96%; height: 68%;}
+        footer {background-color: violet; height: 8%; clear: both; width:100%; vertical-align: middle;}
+        body, html { height: 100%; margin: 0px; padding: 0px; width: 100%;}
+        h1 {text-align: center;}
     </style>
 </head>
 <body>
+    <header>
     <h1>설문지</h1>
     <span>소프트웨어 기술에 대한 의견을 듣습니다. 많은 참여 부탁드립니다.</span>
-    <hr />
+    </header>
+    <section>
     <div id="survey">
     <form>
         학년
@@ -47,6 +49,7 @@
         남기고 싶은 말<input type="text">
     </label>
     </div>
+    </section>
     <footer><span>Copyright 2023 by DawHwan</span></footer>
 </body>
 </html>
