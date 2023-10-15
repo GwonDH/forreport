@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>1</title>
+    </head>
+    <body>
+        <script>
+            function big(ix,iy)
+            {
+                let x = parseInt(ix);
+                let y = parseInt(iy);
+                if(x>y)
+                {
+                    return x;
+                }
+                if(x<y)
+                {
+                    return y;
+                }
+            }
+        </script>
+        <script>
+            let b = big("625", "555");
+            document.write("큰수=" + b);
+        </script>
+    </body>
+</html>
