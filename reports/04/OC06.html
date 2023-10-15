@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "utf-8">
+        <title>별 문자 출력하기</title>
+        <script>
+            function printer(n) {
+                m = parseInt(n);
+                if(isNaN(m)) {
+                    document.write ("입력 오류입니다.");
+                }
+                else if (m<=0) {
+                    document.write ("입력 오류입니다.");
+                }
+                for (let i=0; i<m; i++) {
+                    for (j=0; j<=i; j++) {
+                        document.write("*");
+                    }
+                    document.write("<br>")
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h2>별문자 출력하기</h2>
+        <hr>
+        <script>
+            let n = prompt("정수를 입력하세요.", "");
+            printer(n);
+        </script>
+    </body>
+</html>
