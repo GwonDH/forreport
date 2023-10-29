@@ -11,10 +11,10 @@
     </style>
     <script>
         function sh(){
-			    let spans = document.getElementsByTagName("span");
-			    let style = window.getComputedStyle(spans[0]);
-			    if(style.visibility == "hidden") {for(var i : spans) {i.style.visibility = "visible";}}
-			    else {for(var i : spans) {i.style.visibility = "hidden";}}
+		let spans = document.getElementsByTagName("span");
+		let style = spans[0].style.visibility;
+		if(style.visibility == "hidden") {for(var i : spans) i.style.visibility = "visible";}
+		else {for(var i : spans) i.style.visibility = "hidden";}
         }
     </script>
 </head>
