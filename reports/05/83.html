@@ -12,9 +12,9 @@
     <script>
         function sh(){
 		let spans = document.getElementsByTagName("span");
-		let style = spans[0].style.visibility;
-		if(style.visibility == "hidden") {spans.forEach(i => i.style.visibility = "visible");}
-		else {spans.forEach(i => i.style.visibility = "hidden");}
+		let style = window.getComputedStyle(spans[0]);
+		if(style.visibility == "hidden") {for(var i=0; i<spans.length; i++) {spans[i].style.visibility = "visible";}}
+		else {for(var i=0; i<spans.length; i++) {spans[i].style.visibility = "hidden";}}
         }
     </script>
 </head>
