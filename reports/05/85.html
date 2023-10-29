@@ -12,7 +12,7 @@
 		function changeCard(obj) {
 			obj.style.zIndex=0;
 			let num = document.getElementsByTagName("img");
-			{num.forEach(i => i.style.zIndex++);}
+			{for(var i=0; i<num.length; i++) {num[i].style.zIndex++;}}
 		}
 	</script>
 </head>
